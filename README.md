@@ -1,4 +1,4 @@
-# findwikipediabot
+# Groupwiki
 
 适用于Telegram群的维基百科搜索机器人
 
