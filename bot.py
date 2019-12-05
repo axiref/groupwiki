@@ -25,7 +25,7 @@ def search_keyword(message):
     if not keyword: return
     try:
         result = wikipedia.page(keyword)
-        bot.reply_to(message, "[%s](%s)" % (unquote(result.url), result.url), parse_mode="markdown")
+        bot.reply_to(message, unquote(result.url), parse_mode="markdown")
     except wikipedia.exceptions.PageError:
         bot.reply_to(message, '没找到结果')
 
